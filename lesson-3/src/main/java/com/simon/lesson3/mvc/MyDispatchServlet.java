@@ -2,6 +2,7 @@ package com.simon.lesson3.mvc;
 
 import com.simon.lesson3.annotation.Controller;
 import com.simon.lesson3.annotation.Qualifier;
+import com.simon.lesson3.annotation.RequestMapping;
 import com.simon.lesson3.annotation.Service;
 
 import javax.servlet.*;
@@ -56,6 +57,35 @@ public class MyDispatchServlet extends HttpServlet{
     }
 
     private void initHanlderMapping(){
+        if(ioc.isEmpty()){
+            return ;
+        }
+        Map<String,Object> urlBeanMapping = new HashMap<String ,Object>();
+        for(Map.Entry entry : ioc.entrySet()){
+            Class<? extends Object> clazz = entry.getValue().getClass();
+            if(!clazz.isAnnotationPresent(Controller.class)){
+                continue;
+            }
+            RequestMapping requestMapping = clazz.getAnnotation(RequestMapping.class);
+            String baseUrl = "";
+            if(!"".equals(requestMapping.value())){
+                baseUrl =  requestMapping.value()[0];
+            }
+           Method[] methods = clazz.getDeclaredMethods();
+            for(Method method : methods ){
+                //method.setAccessible(true);
+               if( !method.isAnnotationPresent(RequestMapping.class)){
+                   continue;
+               }
+              RequestMapping requestMappingMethod =  method.getAnnotation(RequestMapping.class);
+                String url =(baseUrl+"/"+requestMappingMethod.value()[0]).replaceAll("/+","/");
+                handlerMapping.put(url,method);
+                //这个是否要 newInstence（）
+                urlBeanMapping.put(url,entry.getValue());
+                System.out.println(url+"="+method);
+            }
+
+        }
 
 
     }
