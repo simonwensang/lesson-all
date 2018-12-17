@@ -14,6 +14,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.net.URL;
 import java.util.*;
@@ -54,6 +55,36 @@ public class MyDispatchServlet extends HttpServlet{
 
     private void doIoc(){
 
+        if(ioc.isEmpty()){
+            return;
+        }
+
+        for(Map.Entry entry : ioc.entrySet()){
+           Class clazz = entry.getValue().getClass();
+           Field[] fields = clazz.getDeclaredFields();
+           for(Field field : fields){
+               field.setAccessible(true);
+               if(!field.isAnnotationPresent(Qualifier.class)){
+                    continue;
+               }
+               Qualifier qualifier = field.getAnnotation(Qualifier.class);
+               String key  ;
+               if(!"".equals(qualifier.value()) ){
+                   key=qualifier.value() ;
+               }else{
+                   key =field.getName();
+               }
+               try {
+                   field.set(entry.getValue(),ioc.get(key));
+               }catch (IllegalArgumentException e) {
+                    e.printStackTrace();
+               }catch (IllegalAccessException e){
+                   e.printStackTrace();
+               }
+           }
+
+        }
+
     }
 
     private void initHanlderMapping(){
@@ -68,7 +99,7 @@ public class MyDispatchServlet extends HttpServlet{
             }
             RequestMapping requestMapping = clazz.getAnnotation(RequestMapping.class);
             String baseUrl = "";
-            if(!"".equals(requestMapping.value())){
+            if(requestMapping!=null && requestMapping.value().length>0){
                 baseUrl =  requestMapping.value()[0];
             }
            Method[] methods = clazz.getDeclaredMethods();

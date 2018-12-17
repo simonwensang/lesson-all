@@ -27,6 +27,7 @@
             <directory>src/main/resources</directory>
             <excludes>
                 <exclude>web.xml</exclude>
+                <exclude>application.properties</exclude>
             </excludes>
         </resource>
         </resources>

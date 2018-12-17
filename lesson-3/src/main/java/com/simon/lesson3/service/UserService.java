@@ -1,6 +1,8 @@
 package com.simon.lesson3.service;
 
+import com.simon.lesson3.annotation.Qualifier;
 import com.simon.lesson3.annotation.Service;
+import com.simon.lesson3.dao.UserDao;
 
 /**
  * Created by sang on 2018/12/14.
@@ -8,9 +10,11 @@ import com.simon.lesson3.annotation.Service;
 @Service("useService")
 public class UserService {
 
-    public String getName(){
+    @Qualifier
+    private UserDao userDao;
 
-        return "test";
+    public String getName(){
+        return userDao.getUserName();
     }
 
 }

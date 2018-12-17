@@ -4,6 +4,7 @@ import com.simon.lesson3.annotation.Controller;
 import com.simon.lesson3.annotation.Qualifier;
 import com.simon.lesson3.annotation.RequestMapping;
 import com.simon.lesson3.annotation.Service;
+import com.simon.lesson3.common.RequestMethod;
 import com.simon.lesson3.service.UserService;
 
 /**
@@ -13,10 +14,10 @@ import com.simon.lesson3.service.UserService;
 @RequestMapping("user")
 public class UserController {
 
-    @Qualifier("")
+    @Qualifier()
     private UserService userService;
 
-    @RequestMapping("getUserName")
+    @RequestMapping(value="get",  method ={RequestMethod.GET})
     public String getUserName(){
         return userService.getName();
     }
