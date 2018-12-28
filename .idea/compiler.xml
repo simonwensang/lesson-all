@@ -11,6 +11,7 @@
         <module name="lesson-3" />
         <module name="lesson-4" />
         <module name="lesson-5" />
+        <module name="lesson-6" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
@@ -19,6 +20,7 @@
       <module name="lesson-3" target="1.5" />
       <module name="lesson-4" target="1.5" />
       <module name="lesson-5" target="1.5" />
+      <module name="lesson-6" target="1.5" />
       <module name="lesson-all" target="1.5" />
     </bytecodeTargetLevel>
   </component>
