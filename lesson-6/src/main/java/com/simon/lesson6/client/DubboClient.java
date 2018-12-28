@@ -47,19 +47,19 @@ public class DubboClient {
             // body信息
             StringBuffer bodyString = new StringBuffer();
             //rpc协议版本
-            bodyString.append(JSON.toJSONString("")).append("\r\n");
+            bodyString.append(JSON.toJSONString("2.0.1")).append("\r\n");
             //接口地址
-            bodyString.append(JSON.toJSONString("")).append("\r\n");
+            bodyString.append(JSON.toJSONString("com.simon.lesson5.service.DemoService")).append("\r\n");
             //接口版本
-            bodyString.append(JSON.toJSONString("")).append("\r\n");
+            bodyString.append(JSON.toJSONString("1.0.0")).append("\r\n");
             //具体方法名
-            bodyString.append(JSON.toJSONString("")).append("\r\n");
+            bodyString.append(JSON.toJSONString("test")).append("\r\n");
             //方法参数类型
-            bodyString.append(JSON.toJSONString("")).append("\r\n");
+            bodyString.append(JSON.toJSONString("Ljava/lang/String;")).append("\r\n");
             //参数值
-            bodyString.append(JSON.toJSONString("")).append("\r\n");
+            bodyString.append(JSON.toJSONString("helllo")).append("\r\n");
             //附加参数
-            bodyString.append(JSON.toJSONString("")).append("\r\n");
+            bodyString.append("{}").append("\r\n");
 
             byte[] body = bodyString.toString().getBytes();
             System.out.println(bodyString);
