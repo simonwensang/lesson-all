@@ -5,7 +5,7 @@ package com.simon.lesson7.queue;
  */
 public interface IQueue<T> {
 
-    T take();
+    T take() throws InterruptedException;
 
-    void put(T t)  ;
+    void put(T t) throws InterruptedException;
 }
