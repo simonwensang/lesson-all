@@ -13,6 +13,9 @@
         <module name="lesson-5" />
         <module name="lesson-6" />
         <module name="lesson-7" />
+        <module name="lesson-algorithm" />
+        <module name="lesson-db-middleware" />
+        <module name="lesson-zookeeper" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
@@ -23,7 +26,10 @@
       <module name="lesson-5" target="1.8" />
       <module name="lesson-6" target="1.8" />
       <module name="lesson-7" target="1.8" />
+      <module name="lesson-algorithm" target="1.8" />
       <module name="lesson-all" target="1.8" />
+      <module name="lesson-db-middleware" target="1.8" />
+      <module name="lesson-zookeeper" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
