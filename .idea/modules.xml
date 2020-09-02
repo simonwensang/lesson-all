@@ -2,17 +2,17 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/lesson-classloader/lesson-1.iml" filepath="$PROJECT_DIR$/lesson-classloader/lesson-1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lesson-jvm-class/lesson-2.iml" filepath="$PROJECT_DIR$/lesson-jvm-class/lesson-2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lesson-spring-annotation/lesson-3.iml" filepath="$PROJECT_DIR$/lesson-spring-annotation/lesson-3.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lesson-tomcat/lesson-4.iml" filepath="$PROJECT_DIR$/lesson-tomcat/lesson-4.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lesson-rpc/lesson-5.iml" filepath="$PROJECT_DIR$/lesson-rpc/lesson-5.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lesson-dubbo/lesson-6.iml" filepath="$PROJECT_DIR$/lesson-dubbo/lesson-6.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lesson-lock-queue/lesson-7.iml" filepath="$PROJECT_DIR$/lesson-lock-queue/lesson-7.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson-algorithm/lesson-algorithm.iml" filepath="$PROJECT_DIR$/lesson-algorithm/lesson-algorithm.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson-all.iml" filepath="$PROJECT_DIR$/lesson-all.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson-classloader/lesson-classloader.iml" filepath="$PROJECT_DIR$/lesson-classloader/lesson-classloader.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson-db-middleware/lesson-db-middleware.iml" filepath="$PROJECT_DIR$/lesson-db-middleware/lesson-db-middleware.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson-dubbo/lesson-dubbo.iml" filepath="$PROJECT_DIR$/lesson-dubbo/lesson-dubbo.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson-java/lesson-java.iml" filepath="$PROJECT_DIR$/lesson-java/lesson-java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson-jvm-class/lesson-jvm-class.iml" filepath="$PROJECT_DIR$/lesson-jvm-class/lesson-jvm-class.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson-lock-queue/lesson-lock-queue.iml" filepath="$PROJECT_DIR$/lesson-lock-queue/lesson-lock-queue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson-rpc/lesson-rpc.iml" filepath="$PROJECT_DIR$/lesson-rpc/lesson-rpc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson-spring-annotation/lesson-spring-annotation.iml" filepath="$PROJECT_DIR$/lesson-spring-annotation/lesson-spring-annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson-tomcat/lesson-tomcat.iml" filepath="$PROJECT_DIR$/lesson-tomcat/lesson-tomcat.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson-zookeeper/lesson-zookeeper.iml" filepath="$PROJECT_DIR$/lesson-zookeeper/lesson-zookeeper.iml" />
     </modules>
   </component>
