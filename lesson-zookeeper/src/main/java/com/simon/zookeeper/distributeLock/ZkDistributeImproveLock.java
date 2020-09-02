@@ -47,6 +47,7 @@ public class ZkDistributeImproveLock implements Lock{
         if (!tryLock()) {
             //阻塞等待
             waitLock();
+
             //再次尝试得到锁
             lock();
         }
