@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/lesson-algorithm/lesson-algorithm.iml" filepath="$PROJECT_DIR$/lesson-algorithm/lesson-algorithm.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson-all.iml" filepath="$PROJECT_DIR$/lesson-all.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson-db-middleware/lesson-db-middleware.iml" filepath="$PROJECT_DIR$/lesson-db-middleware/lesson-db-middleware.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson-java/lesson-java.iml" filepath="$PROJECT_DIR$/lesson-java/lesson-java.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson-zookeeper/lesson-zookeeper.iml" filepath="$PROJECT_DIR$/lesson-zookeeper/lesson-zookeeper.iml" />
     </modules>
   </component>

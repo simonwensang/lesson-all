@@ -8,7 +8,7 @@ import java.util.concurrent.CountDownLatch;
 public class CountDownLatchDemo {
 
     //1 并发
-   /* public static void main(String[] args) throws  Exception {
+   public static void main(String[] args) throws  Exception {
 
         CountDownLatch countDownLatch = new CountDownLatch(5);
         for (int i =0 ; i<4;i++){
@@ -40,10 +40,10 @@ public class CountDownLatchDemo {
             System.out.println("全部执行完毕，我来召唤神龙"+Thread.currentThread());
 
         }).start();
-    }*/
+    }
 
     //2 等待结果
-    public static void main(String[] args) throws  Exception {
+    /*public static void main(String[] args) throws  Exception {
 
         //CountDownLatch countDownLatch = new CountDownLatch(5);
         SimonCountDownLatch countDownLatch = new SimonCountDownLatch(5);
@@ -62,5 +62,5 @@ public class CountDownLatchDemo {
         countDownLatch.await();
         System.out.println("全部执行完毕，我来召唤神龙");
 
-    }
+    }*/
 }

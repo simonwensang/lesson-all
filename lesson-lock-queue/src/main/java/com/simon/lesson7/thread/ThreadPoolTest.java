@@ -57,5 +57,18 @@ public class ThreadPoolTest {
 
     }
 
-
+    public static void main(String[] args) {
+       ThreadPoolTest threadPoolTest = new ThreadPoolTest();
+        threadPoolTest.executor.execute(()->{
+            System.out.println(1/0);
+        });
+        threadPoolTest.executor.submit(()->{
+            System.out.println(1/0);
+        });
+        try {
+            Thread.sleep(1000L);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
 }

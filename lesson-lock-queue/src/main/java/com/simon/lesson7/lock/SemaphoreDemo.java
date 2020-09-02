@@ -21,7 +21,7 @@ public class SemaphoreDemo {
 
     public static void main(String[] args) throws InterruptedException {
         SemaphoreDemo semaphoreDemo = new SemaphoreDemo();
-        for (int i =1 ; i <= 10;i++) {
+        for (int i =1 ; i <= 20;i++) {
             String vip = "VIP00" + i;
             new Thread(() -> {
                 try {

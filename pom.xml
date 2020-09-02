@@ -24,6 +24,7 @@
         <module>lesson-zookeeper</module>
         <module>lesson-algorithm</module>
         <module>lesson-db-middleware</module>
+        <module>lesson-java</module>
     </modules>
 
 </project>
