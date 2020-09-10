@@ -2,11 +2,12 @@ package com.simon.algorithm.slidingWindow;
 
 /**
  * Created by sang on 2020/8/6.
+ * 相邻的两个数字之和 最大的值
  */
 public class SlidingWindow {
 
     public static  int getMaxSum(int k){
-        int[] arr = new int[]{100,200,300,400};
+        int[] arr = new int[]{100,200,300,400,100,500};
 
         int maxsum = 0;
         for(int i =0 ;i < k;i++){
