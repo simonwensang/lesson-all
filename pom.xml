@@ -14,17 +14,18 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>lesson-1</module>
-        <module>lesson-2</module>
-        <module>lesson-3</module>
-        <module>lesson-4</module>
-        <module>lesson-5</module>
-        <module>lesson-6</module>
-        <module>lesson-7</module>
+        <module>lesson-algorithm</module>
+        <module>lesson-classloader</module>
+        <module>lesson-dubbo</module>
+        <module>lesson-jdk</module>
+        <module>lesson-jvm-class</module>
+        <module>lesson-lock-queue</module>
         <module>lesson-zookeeper</module>
         <module>lesson-algorithm</module>
         <module>lesson-db-middleware</module>
-        <module>lesson-java</module>
+        <module>lesson-rpc</module>
+        <module>lesson-spring</module>
+        <module>lesson-tomcat</module>
     </modules>
 
 </project>

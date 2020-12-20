@@ -17,7 +17,7 @@ public class OrderController {
 
     @RequestMapping(value = "/add")
     public Order add(  Order o ){
-         orderService.addOrder(o);
+        orderService.addOrder(o);
         return o;
     }
 
@@ -25,4 +25,5 @@ public class OrderController {
     public Order getOrder(Long orderId) {
         return this.orderService.get(orderId);
     }
+
 }

@@ -59,16 +59,19 @@ public class ThreadPoolTest {
 
     public static void main(String[] args) {
        ThreadPoolTest threadPoolTest = new ThreadPoolTest();
-        threadPoolTest.executor.execute(()->{
-            System.out.println(1/0);
+       /* threadPoolTest.executor.execute(()->{
+           System.out.println(1/0);
+           // System.out.println(1);
+        });*/
+       threadPoolTest.executor.submit(()->{
+             System.out.println(1/0);
+            //System.out.println(0);
         });
-        threadPoolTest.executor.submit(()->{
-            System.out.println(1/0);
-        });
-        try {
-            Thread.sleep(1000L);
+      /*  try {
+            threadPoolTest.executor.awaitTermination(1000,TimeUnit.MILLISECONDS);
         }catch (Exception e){
             e.printStackTrace();
-        }
+        }*/
+
     }
 }

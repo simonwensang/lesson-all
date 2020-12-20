@@ -16,9 +16,11 @@ public class TestClassLoader {
         URLClassLoader parentClassLoader = new URLClassLoader(new URL[]{new URL(url)});
         while(true){
 
-            classLoader = new URLClassLoader(new URL[]{new URL(url)});
+            classLoader = new URLClassLoader(new URL[]{new URL(url)});//破坏双亲委派
+
+           /// Class t = Class.forName("java.lang.Thread")};
             //双亲委派
-            //classLoader = new URLClassLoader(new URL[]{new URL(url)}, parentClassLoader);
+           //  classLoader = new URLClassLoader(new URL[]{new URL(url)}, parentClassLoader);
 
             Class<?> loadClass = classLoader.loadClass(className);
             Object game = loadClass.newInstance();

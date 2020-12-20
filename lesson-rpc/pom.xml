@@ -10,7 +10,7 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>lesson-5</artifactId>
+    <artifactId>lesson-rpc</artifactId>
     <dependencies>
         <!-- dubbo -->
         <dependency>

@@ -22,7 +22,7 @@
         </dependency>
     </dependencies>
 
-    <artifactId>lesson-1</artifactId>
+    <artifactId>lesson-classloader</artifactId>
     <build>
         <plugins>
             <plugin>

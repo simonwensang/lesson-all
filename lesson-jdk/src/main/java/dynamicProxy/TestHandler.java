@@ -5,6 +5,7 @@ package dynamicProxy;
  */
 public class TestHandler {
 
+    //-verbose:class 加载类 详情命令
     public static void main(String[] args) {
 
         IHandler handler =  new MyHandler();

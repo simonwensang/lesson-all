@@ -11,7 +11,7 @@ import java.lang.reflect.Proxy;
  */
 public class RunTimeAnnotationProxyHandler implements InvocationHandler {
 
-    private Object proxyObj;
+    private Object proxyObj;//被代理对象
 
     private RunTimeAnnotationProxyHandler(Object proxyObj) {
         this.proxyObj = proxyObj;
@@ -21,6 +21,7 @@ public class RunTimeAnnotationProxyHandler implements InvocationHandler {
         return Proxy.newProxyInstance(object.getClass().getClassLoader(),object.getClass().getInterfaces(),new RunTimeAnnotationProxyHandler(object) );
     }
 
+    //proxy代理类
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         Object result = null ;
 

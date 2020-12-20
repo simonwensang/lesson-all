@@ -45,6 +45,11 @@ public class MyArrayBlockingQueue<E> {
     }
 
     private void enqueue(E x) {
+        try {
+            Thread.sleep(1000L);
+        } catch (Exception e){
+
+        }
         items[putIndex] = x;
         if (++putIndex == items.length)
             putIndex = 0;
@@ -99,6 +104,7 @@ public class MyArrayBlockingQueue<E> {
             }
 
         }).start();
+
     }
 
 }

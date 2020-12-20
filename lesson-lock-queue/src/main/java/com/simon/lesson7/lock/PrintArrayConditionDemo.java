@@ -15,7 +15,7 @@ public class PrintArrayConditionDemo {
 
     private final Condition conditionB;
 
-    private boolean flag ;
+    private volatile boolean flag ;
 
     public PrintArrayConditionDemo(){
         index = 1;
