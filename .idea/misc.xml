@@ -2,7 +2,7 @@
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/lesson-rpc" />
-    <file type="web" url="file://$PROJECT_DIR$/lesson-spring-annotation" />
+    <file type="web" url="file://$PROJECT_DIR$/lesson-spring" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
