@@ -10,8 +10,13 @@ public class Student {
     private int age ;
 
     private boolean sex;
+    public Student(String name,int age,boolean sex){
+        this.name = name ;
+        this.age = age;
+        this.sex = sex;
+    }
 
-    private void study(){
+    public void study(){
         System.out.println("private study()");
     }
 

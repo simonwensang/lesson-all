@@ -34,21 +34,27 @@ public class SingleLinkReverse {
         return true;
     }
 
-    public SNode reverse(SNode p,SNode newNode){
-        if(p == null){
-            return newNode;
+    public SNode reverse(SNode pre,SNode next){
+        if(pre == next){
+            return next;
         }
-        SNode pnode = p.next ;
-        p.next =  newNode;
-        return  reverse(pnode,p);
+
+        SNode nNext = next.next;
+
+        SNode preNext = pre.next;
+        pre.next = next;
+        next.next = preNext;
+
+        return  reverse(pre,nNext);
     }
 
     public void printf(){
         SNode sNode = this.head;
         while (sNode != null){
-            System.out.println(sNode.value);
+            System.out.print(sNode.value);
             sNode = sNode.next;
         }
+        System.out.println("-");
         System.out.println("----end----");
     }
 
@@ -57,11 +63,11 @@ public class SingleLinkReverse {
         for (int i =2 ;i<6 ; i++){
             initLink.add(new SNode(i));
         }
-        //initLink.printf();
-        SNode sNode = initLink.reverse(initLink.head,new SNode(-1));
+        initLink.printf();
+        SNode sNode = initLink.reverse(initLink.end,initLink.head);
 
         while (sNode != null){
-            System.out.println(sNode.value);
+            System.out.print(sNode.value);
             sNode = sNode.next;
         }
 

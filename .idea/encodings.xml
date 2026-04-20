@@ -3,15 +3,28 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lesson-algorithm" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lesson-algorithm/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lesson-classloader" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lesson-classloader/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lesson-db-middleware" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lesson-db-middleware/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lesson-dubbo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lesson-dubbo/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lesson-jdk" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lesson-jdk/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lesson-jvm-class" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lesson-jvm-class/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lesson-lock-queue" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lesson-lock-queue/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lesson-rpc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lesson-rpc/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lesson-spring" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lesson-spring/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lesson-tomcat" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lesson-tomcat/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lesson-zookeeper" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lesson-zookeeper/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>
 </project>

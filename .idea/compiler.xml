@@ -6,29 +6,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="lesson-1" />
-        <module name="lesson-2" />
-        <module name="lesson-3" />
-        <module name="lesson-4" />
-        <module name="lesson-5" />
-        <module name="lesson-6" />
-        <module name="lesson-7" />
-        <module name="lesson-algorithm" />
-        <module name="lesson-classloader" />
-        <module name="lesson-db-middleware" />
-        <module name="lesson-dubbo" />
-        <module name="lesson-java" />
         <module name="lesson-jdk" />
+        <module name="lesson-zookeeper" />
+        <module name="lesson-3" />
+        <module name="lesson-db-middleware" />
+        <module name="lesson-algorithm" />
+        <module name="lesson-tomcat" />
+        <module name="lesson-classloader" />
+        <module name="lesson-rpc" />
+        <module name="lesson-dubbo" />
         <module name="lesson-jvm-class" />
         <module name="lesson-lock-queue" />
-        <module name="lesson-rpc" />
         <module name="lesson-spring" />
-        <module name="lesson-tomcat" />
-        <module name="lesson-zookeeper" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
-      <module name="lesson" target="1.8" />
       <module name="lesson-1" target="1.8" />
       <module name="lesson-2" target="1.8" />
       <module name="lesson-3" target="1.8" />
@@ -36,23 +28,32 @@
       <module name="lesson-5" target="1.8" />
       <module name="lesson-6" target="1.8" />
       <module name="lesson-7" target="1.8" />
-      <module name="lesson-algorithm" target="1.8" />
       <module name="lesson-all" target="1.8" />
-      <module name="lesson-classloader" target="1.8" />
-      <module name="lesson-db-middleware" target="1.8" />
-      <module name="lesson-dubbo" target="1.8" />
       <module name="lesson-java" target="1.8" />
-      <module name="lesson-jdk" target="1.8" />
-      <module name="lesson-jvm-class" target="1.8" />
-      <module name="lesson-lock-queue" target="1.8" />
-      <module name="lesson-rpc" target="1.8" />
-      <module name="lesson-spring" target="1.8" />
       <module name="lesson-spring-annotation" target="1.8" />
-      <module name="lesson-tomcat" target="1.8" />
-      <module name="lesson-zookeeper" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="GENERATE_NO_WARNINGS" value="true" />
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="lesson-1" options="-parameters" />
+      <module name="lesson-2" options="-parameters" />
+      <module name="lesson-4" options="-parameters" />
+      <module name="lesson-5" options="-parameters" />
+      <module name="lesson-6" options="-parameters" />
+      <module name="lesson-7" options="-parameters" />
+      <module name="lesson-algorithm" options="-parameters" />
+      <module name="lesson-classloader" options="-parameters" />
+      <module name="lesson-db-middleware" options="-parameters" />
+      <module name="lesson-dubbo" options="-parameters" />
+      <module name="lesson-java" options="-parameters" />
+      <module name="lesson-jdk" options="-parameters" />
+      <module name="lesson-jvm-class" options="-parameters" />
+      <module name="lesson-lock-queue" options="-parameters" />
+      <module name="lesson-rpc" options="-parameters" />
+      <module name="lesson-spring" options="-parameters" />
+      <module name="lesson-tomcat" options="-parameters" />
+      <module name="lesson-zookeeper" options="-parameters" />
+    </option>
   </component>
 </project>
