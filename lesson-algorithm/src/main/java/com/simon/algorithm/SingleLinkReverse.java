@@ -58,9 +58,13 @@ public class SingleLinkReverse {
         System.out.println("----end----");
     }
 
+    /*
+    * node 1 2 3         1 2 3       1 2 3
+    * next 2 3 null   null 3 1    null 1 2
+    */
     public static void main(String[] args) {
         SingleLinkReverse initLink = new SingleLinkReverse(new SNode(1));
-        for (int i =2 ;i<6 ; i++){
+        for (int i =2 ;i<4 ; i++){
             initLink.add(new SNode(i));
         }
         initLink.printf();
