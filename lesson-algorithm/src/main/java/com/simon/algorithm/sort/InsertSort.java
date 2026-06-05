@@ -16,7 +16,7 @@ public class InsertSort implements  Sort<int[]>{
             //param
             int param = array[i];
             int j = i-1;
-            while(  j>=0&& array[j]>param){
+            while(  j>=0 && array[j]>param){
                 // 前后换位
                 array[j+1] = array[j];
                 j--;
