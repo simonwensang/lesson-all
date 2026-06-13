@@ -1,4 +1,4 @@
-package com.simon.algorithm;
+package com.simon.algorithm.linkedlist;
 
 /**
  * Created by sang on 2020/12/12.
