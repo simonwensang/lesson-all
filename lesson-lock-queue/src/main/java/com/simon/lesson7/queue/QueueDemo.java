@@ -1,6 +1,7 @@
 package com.simon.lesson7.queue;
 
 import java.util.Queue;
+import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
@@ -21,7 +22,6 @@ public class QueueDemo<E> implements  IQueue<E> {
     int putptr,takepre,count;
 
     public void put(E e) throws InterruptedException{
-
         lock.lock();
         try{
             //满了
@@ -57,6 +57,11 @@ public class QueueDemo<E> implements  IQueue<E> {
 
     }
 
+    /**
+     * 生产消费模式
+     * @param args
+     * @throws InterruptedException
+     */
     public static void main(String[] args) throws InterruptedException{
         final IQueue<Integer> queueDemo = new QueueDemo<Integer>();
 

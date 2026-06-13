@@ -1,15 +1,16 @@
 package com.simon.algorithm;
 
 import com.alibaba.fastjson.JSON;
+import com.simon.algorithm.sort.InsertSort;
+import com.simon.algorithm.sort.Sort;
 
-import java.util.Arrays;
 import java.util.PriorityQueue;
 
 /**
  * 输出数组第k大的数字
  * Created by sang on 2019/6/19.
  */
-public class KthLargest {
+public class ArrayKthLargest {
 
     /**
      * 方法1：排序法
@@ -17,7 +18,9 @@ public class KthLargest {
      * 空间复杂度：O(1)
      */
     public int findKthLargestBySort(int[] nums, int k) {
-        Arrays.sort(nums);
+        //Arrays.sort(nums);
+        Sort sort = new InsertSort();
+        sort.sort(nums);
         return nums[nums.length - k];
     }
 
@@ -180,15 +183,15 @@ public class KthLargest {
     }
 
     public static void main(String[] args) {
-        KthLargest kthLargest = new KthLargest();
+        ArrayKthLargest arrayKthLargest = new ArrayKthLargest();
         int[] nums = {3, 2, 1, 5, 6, 4};
         int k = 2;
 
         System.out.println("数组: " + JSON.toJSONString(nums));
         System.out.println("第 " + k + " 大的数字:");
-        System.out.println("排序法: " + kthLargest.findKthLargestBySort(nums.clone(), k));
-        System.out.println("最小堆法: " + kthLargest.findKthLargestByHeap(nums.clone(), k));
-        System.out.println("快速选择法: " + kthLargest.findKthLargestByQuickSelect(nums.clone(), k));
+        System.out.println("排序法: " + arrayKthLargest.findKthLargestBySort(nums.clone(), k));
+        System.out.println("最小堆法: " + arrayKthLargest.findKthLargestByHeap(nums.clone(), k));
+        System.out.println("快速选择法: " + arrayKthLargest.findKthLargestByQuickSelect(nums.clone(), k));
     }
 
 }

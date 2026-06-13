@@ -19,7 +19,6 @@ public class ThreadPoolTest {
                 System.out.println("task reject");
             }
         });
-
     }
 
     public void eecutors(){
