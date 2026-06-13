@@ -40,8 +40,8 @@ public class SingleLinkReverse {
         }
 
         SNode nNext = next.next;
-
         SNode preNext = pre.next;
+
         pre.next = next;
         next.next = preNext;
 
