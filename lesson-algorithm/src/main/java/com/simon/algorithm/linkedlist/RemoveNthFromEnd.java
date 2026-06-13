@@ -1,6 +1,4 @@
-package com.simon.algorithm;
-
-import com.alibaba.fastjson.JSON;
+package com.simon.algorithm.linkedlist;
 
 /**
  * 删除链表倒数第 N 个节点

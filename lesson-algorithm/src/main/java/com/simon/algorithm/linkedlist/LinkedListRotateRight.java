@@ -1,6 +1,4 @@
-package com.simon.algorithm;
-
-import com.alibaba.fastjson.JSON;
+package com.simon.algorithm.linkedlist;
 
 /**
  * 链表右移 k 个节点到表头

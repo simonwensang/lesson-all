@@ -1,4 +1,4 @@
-package com.simon.algorithm;
+package com.simon.algorithm.array;
 
 import com.alibaba.fastjson.JSON;
 import com.simon.algorithm.sort.InsertSort;
