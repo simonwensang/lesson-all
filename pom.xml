@@ -26,6 +26,7 @@
         <module>lesson-rpc</module>
         <module>lesson-spring</module>
         <module>lesson-tomcat</module>
+        <module>lesson-cache</module>
     </modules>
 
 </project>

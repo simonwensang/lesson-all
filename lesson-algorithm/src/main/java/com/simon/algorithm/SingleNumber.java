@@ -248,8 +248,16 @@ public class SingleNumber {
         // 测试用例6：大数组
         int[] nums6 = {1, 1, 2, 2, 3, 3, 4, 4, 5};
         System.out.println("输入: " + JSON.toJSONString(nums6));
-        System.out.println("异或法结果: " + solution.singleNumber(nums6));
+        System.out.println("异或法结果: " + solution.singleNumber2(nums6));
         System.out.println("期望: 5");
+    }
+
+    public int singleNumber2(int[] nums){
+        int init = 0;
+        for(int i=0;i<nums.length;i++){
+            init ^= nums[i];
+        }
+        return init;
     }
 
 }
