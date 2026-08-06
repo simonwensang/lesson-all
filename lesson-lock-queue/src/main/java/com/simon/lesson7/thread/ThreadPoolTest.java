@@ -1,6 +1,5 @@
 package com.simon.lesson7.thread;
 
-import sun.nio.ch.ThreadPool;
 
 import java.util.concurrent.*;
 
