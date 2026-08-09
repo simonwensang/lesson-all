@@ -42,6 +42,7 @@ public class Searcher {
     public static void main(String[] args) {
         Searcher searcher = new Searcher();
         int[] arr = new int[]{1,2,3,4,5,6,7,8,9,10};
+        int[] arr2 = {1,2,3};
         System.out.println(searcher.orderSearch(arr, 9));
         System.out.println(searcher.binarySearch(arr, 9));
     }
