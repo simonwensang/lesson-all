@@ -27,6 +27,25 @@ import java.util.Set;
  * 2. 校验流程时，只需要检查每两个相邻状态之间是否存在一条边。
  * 3. 查找全部流程时，从起始状态 created 开始深度优先搜索，直到 completed 或 Cancelled 终态。
  * 4. 后续增加新状态或新流转，只需要在 buildStatusFlowMap 方法中注册规则。
+ *
+ * 我会把状态流转规则从硬编码判断改成图结构，并新增枚举全部合法流程的方法。这样后续加状态只改规则表。
+ * 当前类用静态 Map 已经接近状态机，但扩展点不够明显。我会改成“注册流转规则 + DFS 找全部流程”的结构。
+ * •
+ * 用“有向图”表达状态机：状态 -> 可流转的下一个状态集合
+ * •
+ * 新增 findAllStatusFlows()，可以找出当前规则下所有从 created 到终态的完整流程
+ * •
+ * 新增 addStatus / addStatusFlow，后续扩展状态只需要注册规则
+ * •
+ * DFS 搜索时加了 visitedStatusSet，避免未来规则配置成环后递归死循环
+ * •
+ *
+ * 保留并增强了每步注释，方便理解
+ * 验证输出：
+ * true
+ * true
+ * false
+ * [[created, paid, shipped, completed], [created, paid, Cancelled], [created, Cancelled]]
  */
 public class OrderStatusFlowValidator {
 
