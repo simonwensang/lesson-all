@@ -1,4 +1,4 @@
-package com.simon.algorithm;
+package com.simon.algorithm.string;
 
 import com.alibaba.fastjson.JSON;
 
