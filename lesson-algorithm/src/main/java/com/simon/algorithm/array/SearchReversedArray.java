@@ -6,7 +6,7 @@ package com.simon.algorithm.array;
  * 旋转有序数组示例：
  * 原数组 [1,2,3,4,5,6,7] 旋转后可能变成 [5,6,7,1,2,3,4]。
  */
-public class BinarySearch {
+public class SearchReversedArray {
         public int search(int[] nums, int target) {
             return binarySearch(0,nums.length-1,nums,target);
         }
@@ -55,7 +55,7 @@ public class BinarySearch {
 
 
     public static void main(String[] args) {
-        BinarySearch bs = new BinarySearch();
+        SearchReversedArray bs = new SearchReversedArray();
         int[] nums = new int[]{5,6,7,8,9,10,1,2,3,4};
         int target = 1;
         System.out.println(bs.search(nums,target));

@@ -5,14 +5,6 @@ package com.simon.algorithm.linkedlist;
  */
 public class SingleLinkReverse {
 
-    private SNode head ;
-
-    private SNode end ;
-
-    public SingleLinkReverse(SNode head) {
-        this.head = head;
-    }
-
     public static class SNode{
         private SNode next;
 
@@ -23,57 +15,61 @@ public class SingleLinkReverse {
         }
     }
 
-    public boolean add(SNode sNode){
-        if(end == null){
-            end = sNode;
-            head.next = end ;
-        }else {
-            end.next = sNode;
-            end = sNode ;
+    public static SNode createList(int[] arr){
+        SNode head = new SNode(arr[0]);
+        SNode current = head;
+        for(int i =1;i<arr.length;i++){
+            current.next = new SNode(arr[i]);
+            current = current.next ;
         }
-        return true;
+        return head;
     }
 
-    public SNode reverse(SNode pre,SNode next){
-        if(pre == next){
-            return next;
-        }
-
-        SNode nNext = next.next;
-        SNode preNext = pre.next;
-
-        pre.next = next;
-        next.next = preNext;
-
-        return  reverse(pre,nNext);
-    }
-
-    public void printf(){
-        SNode sNode = this.head;
+    public static String printf(SNode head){
+        StringBuffer sb = new StringBuffer();
+        SNode sNode = head;
         while (sNode != null){
-            System.out.print(sNode.value);
+            sb.append(sNode.value);
+            if(sNode.next!=null){
+                sb.append("->");
+            }
             sNode = sNode.next;
         }
-        System.out.println("-");
-        System.out.println("----end----");
+        return sb.toString();
+    }
+
+    public static SNode reverse(SNode end,SNode head){
+        //终止条件
+        if(end == head){
+            return head;
+        }
+        //缓存指针得到end和head的下一个节点
+        SNode headNext = head.next;
+        SNode endNext = end.next;
+        //end指向head
+        end.next = head;
+        //head指向end下一个节点
+        head.next = endNext;
+        //end继续指向head的下一个节点
+        return  reverse(end,headNext);
     }
 
     /*
+    * 1->2->3->null
+    * 2->3->1->null
+    * 3->2->1->null
+    *
     * node 1 2 3         1 2 3       1 2 3
     * next 2 3 null   null 3 1    null 1 2
     */
     public static void main(String[] args) {
-        SingleLinkReverse initLink = new SingleLinkReverse(new SNode(1));
-        for (int i =2 ;i<4 ; i++){
-            initLink.add(new SNode(i));
+        SNode head = createList(new int[]{1,2,3});
+        System.out.println(printf(head));
+        SNode end = head;
+        while(end.next!=null){
+           end = end.next ;
         }
-        initLink.printf();
-        SNode sNode = initLink.reverse(initLink.end,initLink.head);
-
-        while (sNode != null){
-            System.out.print(sNode.value);
-            sNode = sNode.next;
-        }
-
+        SNode sNode = reverse(end,head);
+        System.out.println(printf(sNode));
     }
 }

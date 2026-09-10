@@ -1,4 +1,4 @@
-package com.simon.algorithm.array;
+package com.simon.algorithm.slidingWindow;
 
 import java.util.HashMap;
 

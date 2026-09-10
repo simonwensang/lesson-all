@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSON;
 
 /**
  * 快速排序
+ * O(nlogn)
  * Created by sang on 2019/6/19.
  */
 public class QuickSort implements Sort<int[]> {
@@ -13,6 +14,7 @@ public class QuickSort implements Sort<int[]> {
     }
 
     private void quickSort(int[] array, int left, int right) {
+        //终止条件
         if (left >= right) {
             return;
         }

@@ -1,4 +1,4 @@
-package com.simon.algorithm.array;
+package com.simon.algorithm.slidingWindow;
 
 /**
  * 标题：长度最小的子数组

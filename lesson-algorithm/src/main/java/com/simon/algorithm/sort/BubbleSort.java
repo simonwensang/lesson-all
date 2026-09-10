@@ -14,7 +14,7 @@ import com.alibaba.fastjson.JSON;
 public class BubbleSort implements Sort<int[]> {
 
     public void sort(int[] array) {
-        //第一层for循环i不使用，只用来标记已经排序的位置
+        //第一层for循环i不使用，只用来标记已经排序的位置 3,2,1
         for (int i = 0; i < array.length - 1; i++) {
             // 每次循环都将最大的数交换到数组末尾，末尾就是最大的已经排序的数字
             for (int j = 0; j < array.length - 1 - i; j++) {
